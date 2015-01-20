@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="testApp">
+  <head>
+    <title>Default Title</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/src/styles/angular-drawer.css">
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/src/angular-drawer.js"></script>
+    <script>
+      angular.module('testApp', ['angular-drawer', 'ui.bootstrap'])
+        .config(function () {
+          
+        })
+        .controller('TestController', ['$scope', '$timeout', function($scope, $timeout) {
+
+        }]);
+    </script>
+  </head>
+  <body ng-controller="TestController">
+    angular-drawer demo
+  </body>
+</html>

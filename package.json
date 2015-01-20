@@ -1,0 +1,52 @@
+{
+  "name": "angular-drawer",
+  "version": "0.0.1",
+  "main": [
+    "dist/angular-drawer.min.js",
+    "dist/angular-drawer.css"
+  ],
+  "dependencies": {
+    "angular": "^1.2.0"
+  },
+  "devDependencies": {
+    "del": "^0.1.0",
+    "gulp": "^3.6.0",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-csso": "^0.2.9",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-protractor": "^0.0.12",
+    "gulp-rename": "^1.2.0",
+    "gulp-jshint": "^1.5.3",
+    "gulp-livereload": "^2.0.0",
+    "gulp-uglify": "^1.0.1",
+    "gulp-header": "^1.2.2",
+    "gulp-size": "^1.1.0",
+    "gulp-plumber": "^0.6.3",
+    "gulp-ruby-sass": "^0.7.1",
+    "connect": "^3.0.1",
+    "connect-livereload": "^0.5.0",
+    "jshint-stylish": "^1.0.0",
+    "serve-index": "^1.1.4",
+    "serve-static": "^1.4.0",
+    "protractor": "^1.5.0"
+  },
+  "description": "An angular directive wrapper for drawer.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remotty/angular-drawer.git"
+  },
+  "keywords": [
+    "menu",
+    "side",
+    "drawer",
+    "angular",
+    "angularjs",
+    "directive"
+  ],
+  "author": "Chungsub Kim <subicura@subicura.com> (http://subicura.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remotty/angular-drawer/issues"
+  },
+  "homepage": "https://github.com/remotty/angular-drawer"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "angular-drawer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/remotty/angular-drawer",
+  "authors": [
+    "Chungsub Kim <subicura@subicura.com>"
+  ],
+  "description": "An angular directive wrapper for drawer.",
+  "main": [
+    "dist/angular-drawer.min.js",
+    "dist/angular-drawer.css"
+  ],
+  "keywords": [
+    "menu",
+    "side",
+    "drawer",
+    "angular",
+    "angularjs",
+    "directive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "protractor.conf.js",
+    "gulpfile.js",
+    "bower_components",
+    "node_modules"
+  ],
+  "dependencies": {
+    "angular": ">= 1.2.0"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.1",
+    "angular-bootstrap": "~0.12.0"
+  }
+}
