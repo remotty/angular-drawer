@@ -1,0 +1,61 @@
+$ng-drawer-bg-zindex: 2000;
+$ng-drawer-zindex: 2001;
+$ng-drawer-transition-time: .3s;
+$ng-drawer-width: 250px;
+
+@mixin long-text() {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.ng-drawer-no-scroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.ng-drawer-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  z-index: $ng-drawer-bg-zindex;
+  transition: all $ng-drawer-transition-time cubic-bezier(0.25, 0.8, 0.4, 0.95);
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.ng-drawer {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all $ng-drawer-transition-time cubic-bezier(0.25, 0.8, 0.4, 0.95);
+  top: 0;
+  background-color: #fff;
+  overflow: auto;
+  z-index: $ng-drawer-zindex;
+  width: $ng-drawer-width;
+  @include long-text();
+
+  &.ng-drawer-left {
+    left: 0;
+    box-shadow: 1px 0 3px rgba(50, 50, 50, 0.5);
+    transform: translateZ(0px) translateX(-$ng-drawer-width - 5) translateY(0px);
+  }
+
+  &.ng-drawer-right {
+    right: 0;
+    box-shadow: -1px 0 3px rgba(50, 50, 50, 0.5);
+    transform: translateZ(0px) translateX($ng-drawer-width + 5) translateY(0px);
+  }
+
+  &.ng-drawer-left.active,
+  &.ng-drawer-right.active {
+    transform: translateZ(0px) translateX(0px) translateY(0px);
+  }
+
+} 

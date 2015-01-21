@@ -4,20 +4,46 @@
     <title>Default Title</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/src/styles/angular-drawer.css">
+    <style>
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+      }
+    </style>
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="/src/angular-drawer.js"></script>
     <script>
       angular.module('testApp', ['angular-drawer', 'ui.bootstrap'])
         .config(function () {
-          
         })
         .controller('TestController', ['$scope', '$timeout', function($scope, $timeout) {
 
         }]);
     </script>
   </head>
-  <body ng-controller="TestController">
-    angular-drawer demo
+  <body>
+    <div ng-controller="TestController">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" drawer-btn ng-click="openRightDrawer()">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">angular-drawer demo</a>
+        </div>
+      </nav>
+
+      <div drawer ng-cloak>
+        <h1>Left Drawer</h1>
+        <a class="btn btn-primary" ng-click="closeLeftDrawer()">close</a>
+      </div>
+
+      <div drawer="right" ng-cloak>
+        <h1>Right Drawer</h1>
+        <a class="btn btn-primary" ng-click="closeRightDrawer()">close</a>
+      </div>
+    </div>
   </body>
 </html>

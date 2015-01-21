@@ -8,7 +8,7 @@
   "description": "An angular directive wrapper for drawer.",
   "main": [
     "dist/angular-drawer.min.js",
-    "dist/angular-drawer.css"
+    "dist/styles/angular-drawer.min.css"
   ],
   "keywords": [
     "menu",

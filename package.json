@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": [
     "dist/angular-drawer.min.js",
-    "dist/angular-drawer.css"
+    "dist/styles/angular-drawer.min.css"
   ],
   "dependencies": {
     "angular": "^1.2.0"
